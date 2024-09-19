@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background: #040717; /* Darker colors for the gradient */
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.home-hero {
+  background-image: url("./assets/hero-bg.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.WhyStakeWithUs {
+  background-image: url("./assets/Stake.png");
+  background-position: center; /* Start image from the bottom center */
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0; /* Remove margin if not needed */
+}
+.WhatWeOffer {
+  background-image: url("./assets/WhatWeOffer-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Distribution {
+  background-image: url("./assets/Distribution.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
