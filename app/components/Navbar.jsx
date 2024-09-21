@@ -13,12 +13,30 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import Image from "next/image";
 import Logo from "../assets/Logo.png";
+import ConnectWalletModal from "./ConnectWalletModal";
+import Link from "next/link";
 
-const pages = ["Home", "Raffles", "NFT Raffles"];
+const pages = [
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "Raffles",
+    href: "/raffles",
+  },
+  {
+    name: "NFT Raffles",
+    href: "/nft-raffles",
+  },
+];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-
+  const [isOpen, setIsOpen] = React.useState(false);
+  const closeWallet = () => {
+    setIsOpen(false);
+  };
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -58,19 +76,23 @@ function Navbar() {
             }}
           >
             {pages.map((page) => (
-              <button
-                key={page}
+              <Link
+                key={page.href}
                 onClick={handleCloseNavMenu}
+                href={page.href}
                 className="font-semibold mx-2"
               >
-                {page}
-              </button>
+                {page.name}
+              </Link>
             ))}
           </Box>
 
           {/* Connect Wallet Button */}
           <Box sx={{ flexGrow: 0, display: "flex", alignItems: "center" }}>
-            <button className="font-semibold text-[12px] md:text-[16px] p-2 md:p-3 border-white border-2 rounded-full mx-2">
+            <button
+              className="font-semibold text-[12px] md:text-[16px] p-2 md:p-3 border-white border-2 rounded-full mx-2"
+              onClick={() => setIsOpen(true)}
+            >
               Connect Wallet
             </button>
 
@@ -103,16 +125,22 @@ function Navbar() {
             }}
             open={Boolean(anchorElNav)}
             onClose={handleCloseNavMenu}
-            sx={{ display: { xs: "block", md: "none" }  }}
+            sx={{ display: { xs: "block", md: "none" } }}
           >
             {pages.map((page) => (
-              <MenuItem key={page} onClick={handleCloseNavMenu}>
-                <Typography sx={{ textAlign: "center" }}   className="font-semibold ">{page}</Typography>
+              <MenuItem key={page.href} onClick={handleCloseNavMenu}>
+                <Link
+                  className="font-semibold "
+                  href={page.href}
+                >
+                  {page.name}
+                </Link>
               </MenuItem>
             ))}
           </Menu>
         </Toolbar>
       </Container>
+      <ConnectWalletModal isOpen={isOpen} onClose={closeWallet} />
     </AppBar>
   );
 }

@@ -43,19 +43,19 @@ export default function IncentiveCarousel({ cards, label }) {
       </div>
 
       {/* Cards Container */}
-      <div className="overflow-hidden pt-20">
+      <div className="overflow-x-scroll md:overflow-x-hidden scrollbar-hide pt-20">
         <div
           className="flex space-x-6 px-4 mt-12 transition-transform duration-500 ease-in-out"
           style={{
-            transform: `translateX(${currentIndex * 100}px)`, // Adjusted to slide cards correctly
+            transform: ` translateX(${currentIndex * 100}px)`, // Adjusted to slide cards correctly
             marginLeft: "0px", // Move the card container inward from the left
           }}
         >
           {cards.map((card, index) => (
             <div
               key={index}
-              className={`w-[400px] h-[520px] transition-transform duration-500 ease-in-out
-             `}
+              className={`w-[310px] sm:w-[330px] md:w-[400px]  h-[420px] sm:h-[520px] flex-shrink-0
+             transition-transform duration-500 ease-in-out`}
             >
               <Image
                 src={card.icon}
@@ -63,7 +63,7 @@ export default function IncentiveCarousel({ cards, label }) {
                 className=" h-[65%] w-full rounded-t-2xl"
               />
               <div className="bg-white py-5 px-10 h-[35%] rounded-b-2xl">
-                <h3 className="text-[30px] text-[#000000DE] font-semibold">
+                <h3 className="text-[16px] sm:text-[20px] md:text-[30px] text-[#000000DE] font-semibold">
                   {card.text}
                 </h3>
               </div>

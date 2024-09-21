@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  background: #040717; /* Darker colors for the gradient */
   margin: 0;
   padding: 0;
   color: white;
+  background: #040717; /* Darker colors for the gradient */
+}
+.home-bg {
+  background: black; /* Darker colors for the gradient */
 }
 
 .home-hero {
@@ -29,7 +32,13 @@ body {
 }
 .Distribution {
   background-image: url("./assets/Distribution.png");
-  background-position: center;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.raffles {
+  background-image: url("./assets/Glow.png");
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
