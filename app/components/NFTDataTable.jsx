@@ -70,25 +70,33 @@ const NFTDataTable = () => {
               <TableCell
                 component="th"
                 scope="row"
-                className="text-white flex justify-center  border-b font-semibold border-[#666666] p-4"
                 padding="none"
+                sx={{ borderColor: "#666666" }}
               >
-                <Image
-                  src={row.trait}
-                  alt="nft"
-                  className="w-24 rounded-3xl h-24"
-                />
+                <div className="text-white flex justify-center   font-semibold  p-4">
+                  <Image
+                    src={row.trait}
+                    alt="nft"
+                    className="w-24 rounded-3xl h-24"
+                  />
+                </div>
               </TableCell>
-              <TableCell className="text-white text-center border-b font-semibold border-[#666666] pb-4">
-                {row.collection}
+              <TableCell sx={{ borderColor: "#666666" }}>
+                <div className="text-white text-center  font-semibold  pb-4">
+                  {row.collection}
+                </div>
               </TableCell>
-              <TableCell className="text-white text-center border-b font-semibold border-[#666666] pb-4">
-                {row.name}
+              <TableCell sx={{ borderColor: "#666666" }}>
+                <div className="text-white text-center  font-semibold  pb-4">
+                  {row.name}
+                </div>
               </TableCell>
-              <TableCell className="text-center border-b font-semibold border-[#666666] pb-4">
+              <TableCell sx={{ borderColor: "#666666" }}>
                 <Tooltip title={row.winner} arrow>
-                  <div className="text-[#82B1FF]  h-10 flex justify-center items-end">
-                    {row.winner.slice(0, 6) + "..." + row.winner.slice(-3)}
+                  <div className="text-center font-semibold pb-4">
+                    <div className="text-[#82B1FF]  h-10 flex justify-center items-end">
+                      {row.winner.slice(0, 6) + "..." + row.winner.slice(-3)}
+                    </div>
                   </div>
                 </Tooltip>
               </TableCell>

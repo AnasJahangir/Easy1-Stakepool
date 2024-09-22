@@ -304,26 +304,36 @@ const DataTable = () => {
               <TableCell
                 component="th"
                 scope="row"
-                className="text-white text-center  border-b font-semibold border-[#666666] p-4"
                 padding="none"
+                sx={{ borderColor: "#666666" }}
               >
-                {row.epoch}
+                <div className="text-white text-center font-semibold p-4">
+                  {row.epoch}
+                </div>
               </TableCell>
-              <TableCell className="text-[#82B1FF] text-center border-b font-semibold border-[#666666] pb-4">
-                {row.winner}
+              <TableCell sx={{ borderColor: "#666666" }}>
+                <div className="text-[#82B1FF] text-center  font-semibold pb-4">
+                  {row.winner}
+                </div>
               </TableCell>
-              <TableCell className="text-white text-center border-b font-semibold border-[#666666] pb-4">
-                {row.prize}
+              <TableCell sx={{ borderColor: "#666666" }}>
+                <div className="text-white text-center  font-semibold  pb-4">
+                  {row.prize}
+                </div>
               </TableCell>
-              <TableCell className="text-center border-b font-semibold border-[#666666] pb-4">
-                <Tooltip title={row.tx} arrow>
-                  <div className="text-[#82B1FF]  h-10 flex justify-center items-end">
-                    {row.tx.slice(0, 6) + "..." + row.tx.slice(-3)}
-                  </div>
-                </Tooltip>
+              <TableCell sx={{ borderColor: "#666666" }}>
+                <div className="text-center  font-semibold  pb-4">
+                  <Tooltip title={row.tx} arrow>
+                    <div className="text-[#82B1FF]  h-10 flex justify-center items-end">
+                      {row.tx.slice(0, 6) + "..." + row.tx.slice(-3)}
+                    </div>
+                  </Tooltip>
+                </div>
               </TableCell>
-              <TableCell className="text-white text-center border-b font-semibold border-[#666666] pb-4">
-                {row.status}
+              <TableCell sx={{ borderColor: "#666666" }}>
+                <div className="text-white text-center  font-semibold  pb-4">
+                  {row.status}
+                </div>
               </TableCell>
             </TableRow>
           ))}

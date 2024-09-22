@@ -5,8 +5,7 @@ export default function PoolDetails() {
     <Box className="my-20 mt-40">
       <Box className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-5xl">
         {/* First Pool Card */}
-        <Card
-          variant="outlined"
+        <div
           className="relative w-[310px]  md:w-[380px] lg:w-[450px] rounded-lg p-6  border-2 border-[#999999] "
           style={{
             borderWidth: "1px",
@@ -14,45 +13,44 @@ export default function PoolDetails() {
           }}
         >
           <CardContent>
-            <Typography variant="h5" className="font-semibold text-white mb-10">
+            <h1 className="font-semibold text-[25px] text-white mb-10">
               Current Pool
-            </Typography>
+            </h1>
             <Box className="text-white">
               <Box className="flex justify-between mb-6 pb-1 border-b border-dotted border-[#999999]">
-                <Typography variant="body1" className="font-semibold" >Ticker</Typography>
-                <Typography className=" text-white">
-                  CRDNS
+                <Typography variant="body1" className="font-semibold">
+                  Ticker
                 </Typography>
+                <Typography className=" text-white">CRDNS</Typography>
               </Box>
               <Box className="flex justify-between mb-6 pb-1 border-b border-dotted border-[#999999]">
-                <Typography variant="body1" className="font-semibold">Lifetime ROA</Typography>
-                <Typography className=" text-white">
-                  3.35%
+                <Typography variant="body1" className="font-semibold">
+                  Lifetime ROA
                 </Typography>
+                <Typography className=" text-white">3.35%</Typography>
               </Box>
               <Box className="flex justify-between mb-6 pb-1 border-b border-dotted border-[#999999]">
-                <Typography variant="body1" className="font-semibold">50 Day ROA</Typography>
-                <Typography className=" text-white">
-                  1.79%
+                <Typography variant="body1" className="font-semibold">
+                  50 Day ROA
                 </Typography>
+                <Typography className=" text-white">1.79%</Typography>
               </Box>
               <Box className="flex justify-between mb-6 pb-1 border-b border-dotted border-[#999999]">
-                <Typography variant="body1" className="font-semibold">Total Staked</Typography>
-                <Typography className=" text-white">
-                  2,238,505 ADA
+                <Typography variant="body1" className="font-semibold">
+                  Total Staked
                 </Typography>
+                <Typography className=" text-white">2,238,505 ADA</Typography>
               </Box>
               <Box className="flex justify-between">
-                <Typography variant="body1" className="font-semibold">Margin Fee</Typography>
-                <Typography className=" text-white">
-                  0.00%
+                <Typography variant="body1" className="font-semibold">
+                  Margin Fee
                 </Typography>
+                <Typography className=" text-white">0.00%</Typography>
               </Box>
             </Box>
           </CardContent>
-        </Card>
-        <Card
-          variant="outlined"
+        </div>
+        <div
           className="relative w-[310px]  md:w-[380px] lg:w-[450px] rounded-lg p-6  border-2 border-[#999999] "
           style={{
             borderWidth: "1px",
@@ -60,43 +58,43 @@ export default function PoolDetails() {
           }}
         >
           <CardContent>
-            <Typography variant="h5" className="font-semibold text-white mb-10">
+            <h1 className="font-semibold  text-[25px] text-white mb-10">
               Easy1
-            </Typography>
+            </h1>
             <Box className="text-white">
               <Box className="flex justify-between mb-6 pb-1 border-b border-dotted border-[#999999]">
-                <Typography variant="body1" className="font-semibold">Ticker</Typography>
-                <Typography className=" text-white">
-                  EASY1
+                <Typography variant="body1" className="font-semibold">
+                  Ticker
                 </Typography>
+                <Typography className=" text-white">EASY1</Typography>
               </Box>
               <Box className="flex justify-between mb-6 pb-1 border-b border-dotted border-[#999999]">
-                <Typography variant="body1" className="font-semibold">Lifetime ROA</Typography>
-                <Typography className=" text-white">
-                  10000%
+                <Typography variant="body1" className="font-semibold">
+                  Lifetime ROA
                 </Typography>
+                <Typography className=" text-white">10000%</Typography>
               </Box>
               <Box className="flex justify-between mb-6 pb-1 border-b border-dotted border-[#999999]">
-                <Typography variant="body1" className="font-semibold">50 Day ROA</Typography>
-                <Typography className=" text-white">
-                  10000%
+                <Typography variant="body1" className="font-semibold">
+                  50 Day ROA
                 </Typography>
+                <Typography className=" text-white">10000%</Typography>
               </Box>
               <Box className="flex justify-between mb-6 pb-1 border-b border-dotted border-[#999999]">
-                <Typography variant="body1" className="font-semibold">Total Staked</Typography>
-                <Typography className=" text-white">
-                  99,000,000 ADA
+                <Typography variant="body1" className="font-semibold">
+                  Total Staked
                 </Typography>
+                <Typography className=" text-white">99,000,000 ADA</Typography>
               </Box>
               <Box className="flex justify-between">
-                <Typography variant="body1" className="font-semibold">Margin Fee</Typography>
-                <Typography className=" text-white">
-                  0.00%
+                <Typography variant="body1" className="font-semibold">
+                  Margin Fee
                 </Typography>
+                <Typography className=" text-white">0.00%</Typography>
               </Box>
             </Box>
           </CardContent>
-        </Card>
+        </div>
       </Box>
     </Box>
   );

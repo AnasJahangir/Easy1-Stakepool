@@ -14,18 +14,20 @@ function NFTHero() {
         <Box className="my-20">
           <Box className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-5xl">
             {/* First Pool Card */}
-            <Card
-              variant="outlined"
+            <div
               className="relative w-[310px]   md:w-[380px] lg:w-[450px]  "
               style={{
-                borderWidth: "1px",
                 background: "none",
+                boxShadow: "none",
               }}
             >
-              <Image src={TheMandrillz} alt="nft" className="h-full object-cover rounded-3xl " />
-            </Card>
-            <Card
-              variant="outlined"
+              <Image
+                src={TheMandrillz}
+                alt="nft"
+                className="h-full object-cover rounded-3xl "
+              />
+            </div>
+            <div
               className="relative w-[310px]  md:w-[380px] lg:w-[450px] rounded-3xl p-3   border-2 border-[#999999] "
               style={{
                 borderWidth: "1px",
@@ -33,19 +35,16 @@ function NFTHero() {
               }}
             >
               <CardContent>
-                <Typography
-                  variant="h4"
-                  className="font-semibold text-white mb-3"
-                >
+                <h1 className=" text-[30px] font-semibold text-white mb-3">
                   TheMandrillz #1013
-                </Typography>
-                <Typography
+                </h1>
+                <h1
                   variant="h6"
                   className=" text-white mb-5 flex  items-center"
                 >
                   The Mandrillz{" "}
                   <Image src={VerifiedRounded} className="w-5 ms-2" alt="nft" />
-                </Typography>
+                </h1>
                 <Typography variant="h7" className=" text-white font-normal ">
                   This is a collection of 8888 unique Mandrillz. A meteor
                   strikes near a zoo and the mandrill enclosure is largely
@@ -53,34 +52,32 @@ function NFTHero() {
                 </Typography>
                 <Box className="text-white mt-10">
                   <Box className="flex justify-between mb-6 pb-1 border-b border-dotted border-[#999999]">
-                    <Typography variant="body1" className="font-semibold">
+                    <h1 className="font-semibold">
                       Wen
-                    </Typography>
-                    <Typography className=" text-white">Expired</Typography>
+                    </h1>
+                    <h1 className=" text-white">Expired</h1>
                   </Box>
                   <Box className="flex justify-between mb-6 pb-1 border-b border-dotted border-[#999999]">
-                    <Typography variant="body1" className="font-semibold">
+                    <h1 className="font-semibold">
                       Tickets
-                    </Typography>
-                    <Typography className=" text-white">0/10</Typography>
+                    </h1>
+                    <h1 className=" text-white">0/10</h1>
                   </Box>
                   <Box className="flex justify-between mb-6 pb-1 border-b border-dotted border-[#999999]">
-                    <Typography variant="body1" className="font-semibold">
+                    <h1 className="font-semibold">
                       My Entries
-                    </Typography>
-                    <Typography className=" text-white">0/3</Typography>
+                    </h1>
+                    <h1 className=" text-white">0/3</h1>
                   </Box>
                   <Box className="flex justify-between mb-6 pb-1 border-b border-dotted border-[#999999]">
-                    <Typography variant="body1" className="font-semibold">
+                    <h1 className="font-semibold">
                       Status
-                    </Typography>
-                    <Typography className=" text-white">
-                      Drawing Winner
-                    </Typography>
+                    </h1>
+                    <h1 className=" text-white">Drawing Winner</h1>
                   </Box>
                 </Box>
               </CardContent>
-            </Card>
+            </div>
           </Box>
         </Box>
       </div>

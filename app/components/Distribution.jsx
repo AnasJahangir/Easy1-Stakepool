@@ -34,7 +34,7 @@ function Distribution() {
                 ? "bg-[#304FFE]"
                 : "bg-[#acb9ff]"
             }
- py-3 px-6  text-center align-middle  font-sans font-semibold text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg  focus:shadow-none active:opacity-[0.85] active:shadow-none peer-placeholder-shown:pointer-events-none peer-placeholder-shown:bg-blue-gray-500 peer-placeholder-shown:opacity-50 peer-placeholder-shown:shadow-none`}
+ py-3 px-6  text-center align-middle  font-sans font-semibold  shadow-md  transition-all   focus:shadow-none active:opacity-[0.85] active:shadow-none peer-placeholder-shown:pointer-events-none peer-placeholder-shown:bg-blue-gray-500 peer-placeholder-shown:opacity-50 peer-placeholder-shown:shadow-none`}
             type="button"
             onClick={check}
           >
