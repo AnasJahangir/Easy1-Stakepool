@@ -38,25 +38,33 @@ const NFTDataTable = () => {
       <Table>
         <TableHead className="mb-10">
           <TableRow>
-            <TableCell className="text-center border-none">
-              <span className="text-white border px-6 inline-block mb-10 py-2 font-semibold rounded-xl">
-                Trait
-              </span>
-            </TableCell>
-            <TableCell className="text-center border-none">
-              <div className="text-white border px-6 inline-block mb-10 py-2 font-semibold rounded-xl">
-                Collection
+            <TableCell sx={{ border: "none" }}>
+              <div className="flex justify-center ">
+                <span className="text-white border px-6 inline-block mb-10 py-2 font-semibold rounded-xl">
+                  Trait
+                </span>
               </div>
             </TableCell>
-            <TableCell className="text-center border-none">
-              <span className="text-white border px-6 inline-block mb-10 py-2 font-semibold rounded-xl">
-                Name
-              </span>
+            <TableCell sx={{ border: "none" }}>
+              <div className="flex justify-center ">
+                <div className="text-white border px-6 inline-block mb-10 py-2 font-semibold rounded-xl">
+                  Collection
+                </div>
+              </div>
             </TableCell>
-            <TableCell className="text-center border-none">
-              <span className="text-white border px-6 inline-block mb-10 py-2 font-semibold rounded-xl">
-                Winner
-              </span>
+            <TableCell sx={{ border: "none" }}>
+              <div className="flex justify-center ">
+                <span className="text-white border px-6 inline-block mb-10 py-2 font-semibold rounded-xl">
+                  Name
+                </span>
+              </div>
+            </TableCell>
+            <TableCell sx={{ border: "none" }}>
+              <div className="flex justify-center ">
+                <span className="text-white border px-6 inline-block mb-10 py-2 font-semibold rounded-xl">
+                  Winner
+                </span>
+              </div>
             </TableCell>
           </TableRow>
         </TableHead>
