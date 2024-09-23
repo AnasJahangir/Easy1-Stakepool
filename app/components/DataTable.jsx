@@ -267,30 +267,40 @@ const DataTable = () => {
       <Table>
         <TableHead className="mb-10">
           <TableRow>
-            <TableCell className="text-center border-none">
-              <span className="text-white border px-6 inline-block mb-10 py-2 font-semibold rounded-xl">
-                Epoch
-              </span>
-            </TableCell>
-            <TableCell className="text-center border-none">
-              <div className="text-white border px-6 inline-block mb-10 py-2 font-semibold rounded-xl">
-                Winner
+            <TableCell sx={{ border: "none" }}>
+              <div className="flex justify-center ">
+                <span className="text-white border text-center px-6 inline-block mb-10 py-2 font-semibold rounded-xl">
+                  Epoch
+                </span>
               </div>
             </TableCell>
-            <TableCell className="text-center border-none">
-              <span className="text-white border px-6 inline-block mb-10 py-2 font-semibold rounded-xl">
-                Prize
-              </span>
+            <TableCell sx={{ border: "none" }}>
+              <div className="flex justify-center ">
+                <div className="text-white border px-6 inline-block mb-10 py-2 font-semibold rounded-xl">
+                  Winner
+                </div>
+              </div>
             </TableCell>
-            <TableCell className="text-center border-none">
-              <span className="text-white border px-6 inline-block mb-10 py-2 font-semibold rounded-xl">
-                Tx
-              </span>
+            <TableCell sx={{ border: "none" }}>
+              <div className="flex justify-center ">
+                <span className="text-white border px-6 inline-block mb-10 py-2 font-semibold rounded-xl">
+                  Prize
+                </span>
+              </div>
             </TableCell>
-            <TableCell className="text-center border-none">
-              <span className="text-white border px-6 py-2 inline-block mb-10 font-semibold rounded-xl">
-                Status
-              </span>
+            <TableCell sx={{ border: "none" }}>
+              <div className="flex justify-center ">
+                <span className="text-white border px-6 inline-block mb-10 py-2 font-semibold rounded-xl">
+                  Tx
+                </span>
+              </div>
+            </TableCell>
+            <TableCell sx={{ border: "none" }}>
+              <div className="flex justify-center ">
+                <span className="text-white border px-6 py-2 inline-block mb-10 font-semibold rounded-xl">
+                  Status
+                </span>
+              </div>
             </TableCell>
           </TableRow>
         </TableHead>
